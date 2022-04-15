@@ -38,15 +38,12 @@ repos:
       - id: flake8
         name: flake8 (PEP8 Checker)
 
-  - repo: git@gitlab.com:ComputerConceptsLimited/pre-commit-hooks.git
-    rev: 1.2.19
+  - repo: git@github.com:johnsondnz/pre-commit-coding-standards.git
+    rev: v1.0.7
     hooks:
       - id: coding-standards
-      - id: container-setup
-      - id: packer-validate
-      - id: packer-fmt
 
-  - repo: https://git.iamthefij.com/iamthefij/ansible-pre-commit.git
-    rev: v0.1.2
+  - repo: git@github.com:johnsondnz/pre-commit-ansible-secrets.git
+    rev: v1.0.1
     hooks:
       - id: encryption-check
